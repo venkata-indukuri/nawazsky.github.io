@@ -1,11 +1,12 @@
 <html>
+<body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #653796;
+		background-color: #005290;
 		font-family: "Salesforce Sans", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #653796;
+		outline: 1px solid #005290;
 	}
 	@font-face {
 		font-family: 'Salesforce Sans';
@@ -20,10 +21,10 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
-		embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		// Settings for Live Agent
@@ -43,13 +44,13 @@
 			'https://stage-nowtv.cs102.force.com/',
 			gslbBaseURL,
 			'00D1j0000008aqN',
-			'Snap_in',
+			'BillieBot_Snap_In',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
 				deploymentId: '572G00000004EEz',
-				buttonId: '573G00000004ERh',
+				buttonId: '5731j0000008OYv',
 				baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1p000000KyjaEAC_1602664f31e',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1j000000005fEAA_168e6b8c9c8',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -66,4 +67,5 @@
 		initESW('https://service.force.com');
 	}
 </script>
+</body>
 </html>
